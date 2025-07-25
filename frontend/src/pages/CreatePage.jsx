@@ -46,7 +46,7 @@ const CreatePage = ({ color }) => {
         <input type="number" className={`border ${color === "bg-gray-900" ? "border-white" : "border-black"} bg-transparent rounded px-2 py-1 w-full `} placeholder='Enter product price' onChange={(e)=> setNewProduct({ ...newProduct, price: e.target.value})}  value={newProduct.price}/>
         <p className='text-xl py-3'>Product Image</p>
         <label htmlFor="image">
-          <input type="text"  className={`border ${color === "bg-gray-900" ? "border-white" : "border-black"} bg-transparent rounded px-2 py-1 w-full `} placeholder='Enter product price'onChange={(e)=> setNewProduct({ ...newProduct, image: e.target.value})}  value={newProduct.image} />
+          <input type="text"  className={`border ${color === "bg-gray-900" ? "border-white" : "border-black"} bg-transparent rounded px-2 py-1 w-full `} placeholder='image address'onChange={(e)=> setNewProduct({ ...newProduct, image: e.target.value})}  value={newProduct.image} />
         </label>
         <input type="file" hidden id='image' />
         <div className='text-center'>
